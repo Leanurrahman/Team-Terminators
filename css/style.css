@@ -4,6 +4,9 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 40px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .featured-header {
@@ -126,4 +129,221 @@ body {
 
 .btn:hover {
   background: #ccc;
+}/*separately created footer.css bcz some names aere colliding with other css files*/#footer {
+  background-color: #121212;
+  color: #a0a0a0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+.site-footer {
+  padding: 60px 0 0;
+  background-color: #1a1a1a;
+  margin-top: auto;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.footer-column h3 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.footer-column p {
+  margin-bottom: 20px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+.footer-column a {
+  color: #a0a0a0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+  color: #ffffff;
+}
+
+.social-icons a {
+  font-size: 1.2rem;
+  margin-right: 15px;
+}
+
+.newsletter-form {
+  display: flex;
+  margin-top: 15px;
+}
+
+.newsletter-form input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #444;
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.newsletter-form button {
+  padding: 10px 15px;
+  border: 1px solid #444;
+  border-left: none;
+  background-color: #333;
+  color: #a0a0a0;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #555;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #333;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  gap: 15px;
+  font-size: 0.9rem;
+}
+
+.footer-bottom-links a {
+  margin-left: 20px;
+}
+/*separately created footer.css bcz some names aere colliding with other css files*/#footer {
+  background-color: #121212;
+  color: #a0a0a0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+.site-footer {
+  padding: 60px 0;
+  background-color: #1a1a1a;
+  margin-top: auto;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.footer-column h3 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.footer-column p {
+  margin-bottom: 20px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+.footer-column a {
+  color: #a0a0a0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+  color: #ffffff;
+}
+
+.social-icons a {
+  font-size: 1.2rem;
+  margin-right: 15px;
+}
+
+.newsletter-form {
+  display: flex;
+  margin-top: 15px;
+}
+
+.newsletter-form input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #444;
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.newsletter-form button {
+  padding: 10px 15px;
+  border: 1px solid #444;
+  border-left: none;
+  background-color: #333;
+  color: #a0a0a0;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #555;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #333;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  gap: 15px;
+  font-size: 0.9rem;
+}
+
+.footer-bottom-links a {
+  margin-left: 20px;
 }

@@ -1,0 +1,196 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: #0e0e0e;
+  border-bottom: 1px solid #232323;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  gap: 16px;
+  
+}
+
+.logo {
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: .2px;
+  color: #50ee50;       
+  text-decoration: none;
+}
+
+
+.search-box {
+  flex: 1;
+  max-width: 900px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  background: #212c23;
+  border: 1px solid #85bd95;
+  border-radius: 16px;
+  padding: 0 16px;
+  gap: 10px;
+  transition: all 0.3s ease; 
+}
+.search-box:focus-within {
+  border-color: #343434;
+  box-shadow: 0 0 0 2px rgba(255,255,255,.05);
+}
+.search-box::before {
+  content: "🔍";
+  opacity: .8; 
+  margin-right: 8px;
+}
+
+
+.search-box:hover {
+  border-color: #79f2b5;                     
+  box-shadow: 0 0 8px rgba(121, 242, 181, 0.4); 
+  background: #253028;                          
+}
+
+.search-box input {
+  flex: 1;
+  height: 48px;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: #e9e9e9;
+  font-size: 16px;
+}
+.search-box input::placeholder { 
+  color:#9aa0a6; 
+}
+
+
+.user-icon {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  background: #171717;
+  border: 1px solid #79f2b5;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.user-icon:hover { background:#1b1b1b; border-color:#343434; }
+
+
+.navbar {
+  background: #101010;
+  border-top: 1px solid #232323;
+  border-bottom: 1px solid #232323;
+  overflow-x: auto;             
+  white-space: nowrap;
+  scrollbar-gutter: stable both-edges;
+}
+.navbar ul {
+  display: inline-flex;
+  gap: 65px;
+  align-items: center;
+  margin: 0;
+  padding: 14px 30px;
+  list-style: none;
+}
+.navbar li { flex: 0 0 auto; }
+.navbar a {
+  color: #e2e5ea;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+}
+.navbar a:hover,
+.navbar a:focus { color:#fff; }
+
+
+.navbar::-webkit-scrollbar {
+  height: 8px;
+}
+.navbar::-webkit-scrollbar-track {
+  background: #2b2b2b;
+}
+.navbar::-webkit-scrollbar-thumb {
+  background: #cfcfcf;
+  border-radius: 10px;
+}
+.navbar::-webkit-scrollbar-thumb:hover {
+  background: #d8d8d8;
+}
+
+
+.navbar::-webkit-scrollbar-button {
+  width: 16px;
+  background: #2b2b2b no-repeat center;
+}
+.navbar::-webkit-scrollbar-button:horizontal:decrement {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'><polygon points='6,1 2,4 6,7' fill='%23cfcfcf'/></svg>");
+}
+.navbar::-webkit-scrollbar-button:horizontal:increment {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'><polygon points='2,1 6,4 2,7' fill='%23cfcfcf'/></svg>");
+}
+
+
+body {
+  /* background: rgb(19, 18, 18); */
+   background-color: #0e0e0e;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  /* padding: 40px; */
+}
+
+
+
+header { flex-wrap: nowrap; }
+.search-box { flex: 1 1 auto; min-width: 0; margin: 0 10px; } 
+.user-icon { flex: 0 0 auto; }
+
+
+@media (max-width: 1200px){
+  .navbar ul { gap: 40px; padding: 12px 20px; }
+  .navbar a  { font-size: 18px; }
+}
+
+
+@media (max-width: 992px){
+  header { padding: 12px 16px; gap: 12px; }
+  .logo  { font-size: 30px; }
+  .navbar ul { gap: 28px; }
+}
+
+@media (max-width: 768px){
+  .search-box { height: 40px; }
+  .search-box input { font-size: 15px; height: 40px; }
+  .user-icon { width: 40px; height: 40px; }
+  .navbar ul { gap: 22px; padding: 10px 14px; }
+  .navbar a  { font-size: 16px; padding: 8px 10px; }
+  .navbar::-webkit-scrollbar { height: 6px; }
+}
+
+
+@media (max-width: 430px){
+  .logo { font-size: 24px; }
+  .search-box { height: 38px; }
+  .navbar ul { gap: 16px; }
+  .navbar a  { font-size: 15px; }
+}
+
+
+@media (max-width: 375px){
+  header { padding: 10px 12px; gap: 8px; }
+  .logo { font-size: 22px; }
+  .user-icon { width: 34px; height: 34px; }
+  .navbar ul { gap: 12px; }
+  .navbar a  { font-size: 14px; padding: 6px 8px; }
+  .navbar::-webkit-scrollbar { height: 5px; }
+}
+
+
+@media (max-width: 320px){
+  .navbar a { font-size: 13px; padding: 6px; }
+}
+
+
+

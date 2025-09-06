@@ -4,64 +4,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cart</title>
-  <link rel="stylesheet" href="/css/style.css">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
+  <title>Responsive Footer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<footer class="bg-dark-card mt-16 pt-12 pb-8">
-  <div class="container mx-auto px-6">
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-gray-light">
-      <!-- Store Info -->
-      <div class="mb-6 md:mb-0">
-        <h3 class="text-lg font-semibold text-white mb-4">Store</h3>
-        <p class="text-sm">Your trusted online marketplace for quality products at great prices.</p>
-        <div class="flex space-x-4 mt-4 text-lg">
-          <a href="#" class="hover:text-white"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="hover:text-white"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="hover:text-white"><i class="fab fa-instagram"></i></a>
+
+<body>
+  <footer>
+    <div class="footer-main-content">
+      <div>
+        <h3>Store</h3>
+        <p>Your trusted online marketplace for quality products at great prices.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
-      <!-- Quick Links -->
       <div>
-        <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
-        <ul class="text-sm space-y-2">
-          <li><a href="#" class="hover:text-white">About Us</a></li>
-          <li><a href="#" class="hover:text-white">Contact</a></li>
-          <li><a href="#" class="hover:text-white">FAQ</a></li>
-          <li><a href="#" class="hover:text-white">Shipping Info</a></li>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Shipping Info</a></li>
         </ul>
       </div>
-      <!-- Customer Service -->
       <div>
-        <h3 class="text-lg font-semibold text-white mb-4">Customer Service</h3>
-        <ul class="text-sm space-y-2">
-          <li><a href="#" class="hover:text-white">Returns & Exchanges</a></li>
-          <li><a href="#" class="hover:text-white">Size Guide</a></li>
-          <li><a href="#" class="hover:text-white">Track Your Order</a></li>
-          <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+        <h4>Customer Service</h4>
+        <ul>
+          <li><a href="#">Returns & Exchanges</a></li>
+          <li><a href="#">Size Guide</a></li>
+          <li><a href="#">Track Your Order</a></li>
+          <li><a href="#">Privacy Policy</a></li>
         </ul>
       </div>
-      <!-- Newsletter -->
       <div>
-        <h3 class="text-lg font-semibold text-white mb-4">Stay Updated</h3>
-        <p class="text-sm mb-3">Subscribe to our newsletter for deals and updates.</p>
-        <form class="flex">
-          <input type="email" placeholder="your@email.com"
-            class="w-full bg-dark-secondary text-white placeholder-gray-400 border border-gray-600 rounded-l-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
-          <button type="submit" class="bg-blue-600 text-white px-4 rounded-r-md hover:bg-blue-700 transition-colors"><i
-              class="fas fa-envelope"></i></button>
+        <h4>Stay Updated</h4>
+        <p>Subscribe to our newsletter for deals and updates.</p>
+        <form class="footer-newsletter-form">
+          <input type="email" placeholder="email">
+          <button type="submit" aria-label="email"><i class="fa fa-envelope"></i></button>
         </form>
       </div>
     </div>
-    <hr class="border-t border-gray-700 my-8">
-    <div class="flex flex-col sm:flex-row justify-between items-center text-sm text-gray-light">
-      <p>&copy; 2025 Store. All rights reserved.</p>
-      <div class="flex space-x-4 mt-4 sm:mt-0">
-        <a href="#" class="hover:text-white">Terms of Service</a>
-        <a href="#" class="hover:text-white">Privacy Policy</a>
-      </div>
-    </div>
-  </div>
-</footer>
+    <hr>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Store. All rights reserved.</span>
+  </footer>
+</body>
